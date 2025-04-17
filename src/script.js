@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const result = document.getElementById('result');
+const resultDiv = document.getElementById('result');
 
 const akanNames = {
     male: ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"],
@@ -35,6 +35,9 @@ form.addEventListener("submit", function(event) {
         ((4 * CC - 2 * CC - 1) + (5 * YY / 4) + (26 * (month + 1) / 10) + day) % 7
     );
 
-// Get the day of the week
+// Get the day of the week and get the akanName
     const dayIndex = Math.floor(d);
-}
+    const akanName = akanNames[gender][dayIndex];
+
+resultDiv.textContent = `Your Akan name is: ${akanName}`;
+});
