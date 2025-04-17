@@ -40,7 +40,7 @@ form.addEventListener("submit", function(event) {
     const akanName = akanNames[gender][dayIndex];
 
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-resultDiv.textContent = `You were born on a ${daysOfWeek[dayIndex]}. Your Akan name is: ${akanName}`;
+    resultDiv.textContent = `You were born on a ${daysOfWeek[dayIndex]}. Your Akan name is: ${akanName}`;
 
 form.reset();
 });
