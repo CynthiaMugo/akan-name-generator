@@ -7,8 +7,9 @@ const akanNames = {
 }
 
 // Listen to the submit function
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting and use js instead 
+form.addEventListener("submit", function(event) {
+// Prevent the form from submitting and use js instead     
+    event.preventDefault(); 
 // grab the values from the form
     const day = parseInt(document.getElementById('day').value);
     const month = parseInt(document.getElementById('month').value);
@@ -25,3 +26,15 @@ form.addEventListener('submit', function(event) {
         alert("Please enter a valid date and select gender.");
         return;
     }
+
+    const CC = Math.floor(year / 100);
+    const YY = year % 100;
+
+// Make calculations using the formula given in the project
+    const d = Math.floor(
+        ((4 * CC - 2 * CC - 1) + (5 * YY / 4) + (26 * (month + 1) / 10) + day) % 7
+    );
+
+// Get the day of the week
+    const dayIndex = Math.floor(d);
+}
