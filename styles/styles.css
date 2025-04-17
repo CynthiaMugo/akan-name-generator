@@ -54,7 +54,7 @@ button[type=submit] {
     background-color: lightblue;
     color: darkblue;
     padding: 14px 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -67,7 +67,7 @@ button[type=submit]:hover {
     margin-top: 5px;
     padding: 5px;
     font-weight: bolder;
-    font-size: medium;
-    color: darkblue;
+    font-size: larger;
+    color: black;
 }
 
