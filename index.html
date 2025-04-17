@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/tracking.png"
-      type="image/x-icon"
+    <link rel="shortcut icon" href="./assets/images/tracking.png" type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Akan Name Generator</title>
@@ -19,26 +16,24 @@
 
       <div class="description">
         <p>
-          Have you ever wondered what your name would be in another culture? In
-          Ghanaian Akan tradition, names aren't just given at random—they're
-          deeply meaningful and tied to the day of the week a person is born.
-          Each day has a specific name for males and females, often reflecting
-          personality traits, social expectations, and spiritual significance.
-          <br />
-          This Akan Name Generator is a fun and easy way to tap into a beautiful
-          part of Ghanaian culture. Just pop in your birth date, and we’ll show
-          you your Akan name—based on the day of the week you were born. You’ll
-          also get a quick peek at what your name means. It’s a cool way to
-          learn something new about yourself and maybe even find a name that
-          totally matches your vibe!
+          Curious what your name would be in Ghanaian culture? In the Akan
+          tradition, names are based on the day you were born and your gender.
+          Just enter your birth date and gender to discover your unique Akan
+          name!
         </p>
       </div>
       <div class="form-section">
         <h2>Fill out this form:</h2>
         <form id="form" action="">
-          <label for="birthdate">Birthdate:</label>
-          <input type="date" name="birthdate" id="birthdate" /> <br /><br />
-
+          <label for="day">Day:</label>
+          <input type="number" id="day" name="day" min="1" max="31" required/><br />
+          <br />
+          <label for="day">Month:</label>
+          <input type="number" id="month" name="day" min="1" max="12" required/><br />
+          <br />
+          <label for="day">Year:</label>
+          <input type="number" id="year" name="day" min="1900" max="2100" required/><br />
+          <br />
           <label for="gender">Gender:</label>
           <select name="gender" id="gender">
             <option value="male">Male</option>
