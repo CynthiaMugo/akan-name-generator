@@ -57,7 +57,7 @@ body {
     box-sizing: border-box;
     background-color: green;
   }  
-button[type=button] {
+button[type=submit] {
     width: 100%;
     background-color: green;
     color: wheat;
