@@ -15,14 +15,14 @@
 
 body {
   background-image: url("../assets/images/christmas-snowy-background.jpg");
-  /* background-size: cover;  */
+  background-size: cover;  
   margin: auto;
   width: 50%;
   padding: 10px;
 }
 
 .bd {
-    background-color: whitesmoke;
+    background-color: lightskyblue;
     border-radius: 10px;
     padding: 6px;
     margin: auto;
@@ -47,11 +47,11 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: gainsboro;
+    background-color: silver;
   }  
 button[type=submit] {
     width: 100%;
-    background-color: gainsboro;
+    background-color: lightblue;
     color: darkblue;
     padding: 14px 30px;
     margin-bottom: 40px;
@@ -68,5 +68,6 @@ button[type=submit]:hover {
     padding: 5px;
     font-weight: bolder;
     font-size: medium;
+    color: darkblue;
 }
 
