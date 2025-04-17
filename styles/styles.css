@@ -59,4 +59,14 @@ button[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+button[type=submit]:hover {
+    background-color: darkblue;
+    color: white;
+  }
+.result {
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: medium;
+}
 
