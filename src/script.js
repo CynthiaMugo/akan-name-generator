@@ -1,5 +1,5 @@
-const form = document.getElementById('form');
-const resultDiv = document.getElementById('result');
+const form = document.getElementById("form");
+const resultDiv = document.getElementById("result");
 
 const akanNames = {
     male: ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"],
@@ -11,9 +11,9 @@ form.addEventListener("submit", function(event) {
 // Prevent the form from submitting and use js instead     
     event.preventDefault(); 
 // grab the values from the form
-    const day = parseInt(document.getElementById('day').value);
-    const month = parseInt(document.getElementById('month').value);
-    const year = parseInt(document.getElementById('year').value);
+    const day = parseInt(document.getElementById("day").value);
+    const month = parseInt(document.getElementById("month").value);
+    const year = parseInt(document.getElementById("year").value);
     const gender = document.getElementById("gender").value;
 
 // Check if the date is valid and send alert if not
