@@ -1,4 +1,5 @@
 # Akan Name Generator  
+Live on Vercel:
 #### A simple web-based application that generates your Akan name based on your birth date, April 19, 2025  
 #### By **Cynthia Muthoni Mugo**  
 
@@ -8,12 +9,23 @@ The Akan Name Generator is a cultural tool designed to help users discover their
 ## Setup/Installation Requirements  
 * Clone or download the repository from GitHub  
 * Open the `index.html` file in your browser  
+* Make sure you have the main html file, styles.css and script.js in your vs code
 * No server setup is required  
 * No external dependencies needed—just HTML, CSS, and JavaScript  
 * Ensure your browser supports modern JavaScript features
 
+## Behavior-Driven Development (BDD)
+
+| Behavior | Input | Output |
+|----------|-------|--------|
+| User submits the form with valid day, month, year, and gender | `day=7`, `month=3`, `year=1997`, `gender=female` | Display: "Your Akan name is: Akua" |
+| User submits the form with empty inputs | No input | Alert: "Please enter a valid date and select gender." |
+| User enters an invalid date (e.g., `month=15`) | `day=10`, `month=15`, `year=1995` | Alert: "Please enter a valid date and select gender." |
+| User enters valid inputs but the date does not exist (e.g., `day=31`, `month=2`) | `day=31`, `month=2`, `year=2000` | Alert: "Please enter a valid date and select gender." |
+| User selects gender and enters a real date | Valid input | Akan name based on calculated weekday appears on screen |
+
 ## Known Bugs  
-* No known bugs at the moment  
+*  Does not account for leap years or date validation beyond basic range checks (e.g., 30th February will still pass). 
 * If you experience any unexpected behavior, feel free to open an issue or contact the me directly
 
 ## Technologies Used  
