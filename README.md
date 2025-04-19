@@ -1,5 +1,5 @@
 # Akan Name Generator  
-Live on Vercel:
+Live link on Vercel: https://akan-name-generator-three.vercel.app/
 #### A simple web-based application that generates your Akan name based on your birth date, April 19, 2025  
 #### By **Cynthia Muthoni Mugo**  
 
