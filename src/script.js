@@ -20,12 +20,22 @@ form.addEventListener("submit", function(event) {
     if (
         !day || day < 1 || day > 31 ||
         !month || month < 1 || month > 12 ||
-        !year || year < 1900 || year > 2100 ||
-        !gender
+        !year || year < 1900 || year > 2100 
     ) {
-        alert("Please enter a valid date and select gender.");
+        
+        alert("Please enter a valid date.");
+        document.getElementById("day").value = "";
+        document.getElementById("month").value = "";
+        document.getElementById("year").value = "";
+        // form.reset();
         return;
     }
+    if (!gender) {
+        alert("Please select gender.");
+        return;
+
+        }
+    
 
     const CC = Math.floor(year / 100);
     const YY = year % 100;
