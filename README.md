@@ -18,7 +18,7 @@ The Akan Name Generator is a cultural tool designed to help users discover their
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-| User submits the form with valid day, month, year, and gender | `day=7`, `month=3`, `year=1997`, `gender=female` | Display: "Your Akan name is: Akua" |
+| User submits the form with valid day, month, year, and gender | `day=7`, `month=3`, `year=1997`, `gender=female` | Display: "Your Akan name is: Akosua" |
 | User submits the form with empty inputs | No input | Alert: "Please enter a valid date and select gender." |
 | User enters an invalid date (e.g., `month=15`) | `day=10`, `month=15`, `year=1995` | Alert: "Please enter a valid date and select gender." |
 | User enters valid inputs but the date does not exist (e.g., `day=31`, `month=2`) | `day=31`, `month=2`, `year=2000` | Alert: "Please enter a valid date and select gender." |
