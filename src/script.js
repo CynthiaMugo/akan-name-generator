@@ -17,19 +17,22 @@ form.addEventListener("submit", function(event) {
     const gender = document.getElementById("gender").value;
 
 // Check if the date is valid and send alert if not
-    if (
-        !day || day < 1 || day > 31 ||
-        !month || month < 1 || month > 12 ||
-        !year || year < 1900 || year > 2100 
-    ) {
-        
-        alert("Please enter a valid date.");
+    if (!day || day < 1 || day > 31 ) {
+        alert("Please enter a valid day (1-31).");
         document.getElementById("day").value = "";
-        document.getElementById("month").value = "";
-        document.getElementById("year").value = "";
-        // form.reset();
         return;
     }
+    if (!month || month < 1 || month > 12 ) {
+        alert("Please enter a valid month (1-12).");
+        document.getElementById("month").value = "";
+        return;
+    }
+    if (!year || year < 1900 || year > 2100 ) {
+        alert("Please enter a valid year (1900-2100).");
+        document.getElementById("year").value = "";
+        return;
+    }
+
     if (!gender) {
         alert("Please select gender.");
         return;
